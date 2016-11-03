@@ -11,6 +11,6 @@ node1:
     ports:
         - "8080"
 redis:
-    image: uobi-redis
+    build: ./redis
     ports:
         - "6379"
