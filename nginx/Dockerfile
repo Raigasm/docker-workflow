@@ -6,6 +6,7 @@ MAINTAINER Rai Butera
 
 # Copy custom configuration file from the current directory
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY .ssl/uobi_uk /etc/nginx/ssl/uobi_uk
+COPY .ssl/uobi_uk/uobi_uk.key /etc/nginx/ssl/uobi_uk/uobi_uk.key
+COPY .ssl/uobi_uk/ssl-bundle.crt /etc/nginx/ssl/uobi_uk/ssl-bundle.crt
 
 EXPOSE 443
