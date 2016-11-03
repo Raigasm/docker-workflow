@@ -8,5 +8,6 @@ MAINTAINER Rai Butera
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY uobi_uk.key /etc/nginx/ssl/uobi_uk/uobi_uk.key
 COPY ssl-bundle.crt /etc/nginx/ssl/uobi_uk/ssl-bundle.crt
+CMD ls /etc/nginx/ssl/uobi_uk
 
 EXPOSE 443
