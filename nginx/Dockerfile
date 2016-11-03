@@ -27,10 +27,11 @@ COPY ssl/ssl-bundle.crt /etc/nginx/ssl/uobi_uk/ssl-bundle.crt
 ADD nginx.conf /etc/nginx/
 
 # Append "daemon off;" to the configuration file
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+# RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 # Expose ports
 EXPOSE 443
+EXPOSE 80
 
 # Set the default command to execute when creating a new container
 CMD service nginx start
