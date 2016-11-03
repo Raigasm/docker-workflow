@@ -4,6 +4,6 @@ node/node_modules
 
 node/npm-debug.log
 
-nginx/.ssl
+nginx/ssl
 *.key
 *.crt
